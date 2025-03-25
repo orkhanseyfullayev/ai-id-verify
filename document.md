@@ -1,4 +1,0 @@
-- I downloaded and installed the "CRAFT" model.
-- Automatically test.py was created in this folder and it works for text detection. But script is not well-organized and terminal called code is so complicated.
-- I created main.py for text detection in the "CRAFT-pytorch" folder which this code is regurarly.
-    - Same version of this code "text_detection.py" was created in the main folder ("Bitrme Projesi")
