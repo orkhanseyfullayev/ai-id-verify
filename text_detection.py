@@ -67,6 +67,3 @@ os.makedirs(result_folder, exist_ok=True)
 file_utils.saveResult(image_path, image[:, :, ::-1], boxes, dirname=result_folder)
 
 print("✅ Metin tespiti tamamlandı. Sonuç ./result klasörüne kaydedildi.")
-
-
-# test
