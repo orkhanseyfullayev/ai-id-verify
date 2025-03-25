@@ -1,0 +1,5 @@
+CRAFT-pytorch/
+test_images/
+result/
+document.md
+Thesis.pdf
