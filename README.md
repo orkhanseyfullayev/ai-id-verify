@@ -73,12 +73,24 @@ Each step is fully automated and outputs JSON results for integration with highe
    venv\Scripts\activate           # On Windows
    pip install -r requirements.txt
    ```
+3. **Install additional dependencies (if missing)**
+```
+   pip install opencv-python numpy torch torchvision insightface sixdrepnet pytesseract scikit-image
+```
 
 
+---
 
-
-
-
+## 🚀 Running the System
+1. **Run the complete verification pipeline:**
+   ```
+   python main.py
+   ```
+2. **The program will:**
+   • Capture a live face and an ID photo.
+   • Perform liveness detection and face similarity check.
+   • If verified, run text detection and OCR to extract name and surname.
+   • Save all outputs in the result/ directory.
 
 
 
