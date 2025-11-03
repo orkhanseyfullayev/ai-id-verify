@@ -19,23 +19,31 @@ Each step is fully automated and outputs JSON results for integration with highe
 
 ## ⚙️ System Architecture
 
-main.py
- ├─▶ main_liveness_similarity.py      → Liveness and facial similarity detection
- ├─▶ main_ocr.py                      → Runs OCR pipeline if verification succeeds
- │    ├─ text_detection.py            → Text region detection using CRAFT
- │    └─ ocr.py                       → Tesseract OCR + text extraction
- └─▶ result/
-      ├─ liveness_result.json         → Liveness & similarity output
-      ├─ ocr_data.json                → OCR parsed text
-      ├─ crops/                       → Text crops from CRAFT
-      └─ res_kimlik.txt               → Text coordinates
-
-
-
-| File                          | Description                            |
-| ----------------------------- | -------------------------------------- |
-| `result/liveness_result.json` | Liveness & similarity analysis results |
-| `result/ocr_data.json`        | OCR-extracted text content             |
-| `result/crops/`               | Text crops from CRAFT                  |
-| `result/res_kimlik.txt`       | Bounding box coordinates               |
-| `images_similarity/`          | Captured face and ID photos            |
+```
+📂 identity-verification
+├── main.py → Main controller that runs all modules
+│
+├── main_liveness_similarity.py → Liveness detection + facial similarity using 6DRepNet and InsightFace
+├── main_ocr.py → OCR pipeline triggered if liveness & similarity succeed
+│ ├── text_detection.py → Text region detection using CRAFT
+│ └── ocr.py → OCR text extraction using Tesseract
+│
+├── models/
+│ ├── 6DRepNet_300W_LP_AFLW2000.pth → Pretrained 6DRepNet weights
+│ └── craft_mlt_25k.pth → CRAFT model weights
+│
+├── test_images/
+│ └── kimlik.jpg → Example ID image
+│
+├── images_similarity/
+│ ├── face.png → Captured live face
+│ └── kimlik.png → Captured ID face
+│
+├── result/
+│ ├── liveness_result.json → Liveness & similarity output
+│ ├── ocr_data.json → OCR parsed text
+│ ├── crops/ → Cropped text regions from ID
+│ └── res_kimlik.txt → Text coordinates from CRAFT
+│
+└── face_recognition/ → InsightFace model files
+```
