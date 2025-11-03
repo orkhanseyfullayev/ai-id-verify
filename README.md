@@ -29,3 +29,13 @@ main.py
       ├─ ocr_data.json                → OCR parsed text
       ├─ crops/                       → Text crops from CRAFT
       └─ res_kimlik.txt               → Text coordinates
+
+
+
+| File                          | Description                            |
+| ----------------------------- | -------------------------------------- |
+| `result/liveness_result.json` | Liveness & similarity analysis results |
+| `result/ocr_data.json`        | OCR-extracted text content             |
+| `result/crops/`               | Text crops from CRAFT                  |
+| `result/res_kimlik.txt`       | Bounding box coordinates               |
+| `images_similarity/`          | Captured face and ID photos            |
