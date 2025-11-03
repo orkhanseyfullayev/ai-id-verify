@@ -47,3 +47,42 @@ Each step is fully automated and outputs JSON results for integration with highe
 │
 └── face_recognition/ → InsightFace model files
 ```
+
+---
+
+## 🧩 Technologies
+
+- **Computer Vision:** OpenCV, InsightFace (ArcFace), 6DRepNet  
+- **Text Detection:** CRAFT (Character Region Awareness for Text Detection)  
+- **OCR Engine:** Tesseract (multi-language: English, Turkish, Russian)  
+- **Deep Learning Framework:** PyTorch  
+- **Programming Language:** Python 3.8+
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/orkhanseyfullayev/identity-verification.git
+   cd identity-verification
+2. **Create virtual environment and install dependencies**
+   python -m venv venv
+   source venv/bin/activate        # On macOS/Linux
+   venv\Scripts\activate           # On Windows
+   pip install -r requirements.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
