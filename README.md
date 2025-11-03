@@ -20,12 +20,12 @@ Each step is fully automated and outputs JSON results for integration with highe
 ## ⚙️ System Architecture
 
 main.py
-├─▶ main_liveness_similarity.py → Liveness and facial similarity detection
-├─▶ main_ocr.py → Runs OCR pipeline if verification succeeds
-│ ├─ text_detection.py → Text region detection using CRAFT
-│ └─ ocr.py → Tesseract OCR + text extraction
-└─▶ result/
-├─ liveness_result.json → Liveness & similarity output
-├─ ocr_data.json → OCR parsed text
-├─ crops/ → Text crops from CRAFT
-└─ res_kimlik.txt → Text coordinates
+ ├─▶ main_liveness_similarity.py      → Liveness and facial similarity detection
+ ├─▶ main_ocr.py                      → Runs OCR pipeline if verification succeeds
+ │    ├─ text_detection.py            → Text region detection using CRAFT
+ │    └─ ocr.py                       → Tesseract OCR + text extraction
+ └─▶ result/
+      ├─ liveness_result.json         → Liveness & similarity output
+      ├─ ocr_data.json                → OCR parsed text
+      ├─ crops/                       → Text crops from CRAFT
+      └─ res_kimlik.txt               → Text coordinates
