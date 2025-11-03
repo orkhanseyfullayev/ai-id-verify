@@ -67,11 +67,12 @@ Each step is fully automated and outputs JSON results for integration with highe
    git clone https://github.com/orkhanseyfullayev/identity-verification.git
    cd identity-verification
 2. **Create virtual environment and install dependencies**
+   ```
    python -m venv venv
    source venv/bin/activate        # On macOS/Linux
    venv\Scripts\activate           # On Windows
    pip install -r requirements.txt
-
+   ```
 
 
 
