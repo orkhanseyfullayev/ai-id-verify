@@ -87,10 +87,10 @@ Each step is fully automated and outputs JSON results for integration with highe
    python main.py
    ```
 2. **The program will:**
-   • **Capture a live face and an ID photo.
-   • **Perform liveness detection and face similarity check.
-   • **If verified, run text detection and OCR to extract name and surname.
-   • **Save all outputs in the result/ directory.
+   • Capture a live face and an ID photo.  
+   • Perform liveness detection and face similarity check.  
+   • If verified, run text detection and OCR to extract name and surname.  
+   • Save all outputs in the result/ directory.  
 
 
 
