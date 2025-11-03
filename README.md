@@ -1,7 +1,6 @@
 # AI-Based Identity Verification (Liveness, Face Similarity, and OCR System)
 
-An advanced multi-stage identity verification system integrating **liveness detection**, **face similarity analysis**, and **optical character recognition (OCR)**.  
-The system combines deep learning and image processing techniques to verify user identity based on live facial input and ID document analysis.
+An advanced multi-stage identity verification system integrating **liveness detection**, **face similarity analysis**, and **optical character recognition (OCR)**. The system combines deep learning and image processing techniques to verify user identity based on live facial input and ID document analysis.
 
 ---
 
