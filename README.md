@@ -5,7 +5,7 @@ The system combines deep learning and image processing techniques to verify user
 
 ---
 
-## 🧠 Overview
+## Overview
 
 The system performs three sequential processes:
 
@@ -17,7 +17,7 @@ Each step is fully automated and outputs JSON results for integration with highe
 
 ---
 
-## ⚙️ System Architecture
+## System Architecture
 
 ```
 📂 identity-verification
@@ -50,7 +50,7 @@ Each step is fully automated and outputs JSON results for integration with highe
 
 ---
 
-## 🧩 Technologies
+## Technologies
 
 - **Computer Vision:** OpenCV, InsightFace (ArcFace), 6DRepNet  
 - **Text Detection:** CRAFT (Character Region Awareness for Text Detection)  
@@ -60,7 +60,7 @@ Each step is fully automated and outputs JSON results for integration with highe
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
